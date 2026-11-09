@@ -24,7 +24,7 @@ Deploy on a VM; analysts connect remotely using the **AeroSOuDA Client** CLI.
 
 ```bash
 git clone <repo-url>
-cd aerosouda-cluster/cluster
+cd tg-cluster/cluster
 make fix-perms && make up
 ```
 
@@ -33,7 +33,7 @@ make fix-perms && make up
 Antes de qualquer `hdfs dfs`, o cluster precisa estar levantado e o NameNode pronto.
 
 ```bash
-cd /path/to/aerosouda-cluster/cluster
+cd /path/to/tg-cluster/cluster
 make fix-perms && make up
 
 # Aguarde o NameNode ficar pronto (normalmente 20–60s)

@@ -9,7 +9,7 @@ SCENARIOS_DIR = CLIENT_DIR / "scenarios"
 OUTPUTS_DIR   = CLIENT_DIR / "outputs"
 
 VM_DEFAULT_PORT         = 22
-VM_DEFAULT_CLUSTER_DIR  = "~/aerosouda-cluster/cluster"
+VM_DEFAULT_CLUSTER_DIR  = "~/tg-cluster/cluster"
 HDFS_NAMENODE       = "hdfs://namenode:9000"
 HDFS_INPUTS_DIR     = "/inputs"
 CONTAINER_TMP_OUT   = "/tmp/aerosouda-outputs"

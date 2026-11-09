@@ -1,7 +1,7 @@
 """
 RemoteCluster — SSH/SFTP manager for the AeroSOuDA client.
 
-Connects to a VM running the aerosouda-cluster Docker Compose stack and
+Connects to a VM running the aerosouda cluster Docker Compose stack and
 provides methods to:
   - List simulation CSVs available on the VM's HDFS
   - Transfer a local YAML scenario to the VM
@@ -56,7 +56,7 @@ class RemoteCluster:
         password: Optional[str] = None,
         key_path: Optional[str] = None,
         port: int = DEFAULT_SSH_PORT,
-        cluster_dir: str = "~/aerosouda-cluster/cluster",
+        cluster_dir: str = "~/tg-cluster/cluster",
     ) -> None:
         self.host = host
         self.user = user

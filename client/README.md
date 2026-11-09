@@ -8,7 +8,7 @@ Remote CLI for submitting distributed analysis jobs to the AeroSOuDA cluster on 
 
 ```bash
 git clone <repo-url>
-cd aerosouda-cluster/client
+cd tg-cluster/client
 
 # Install Python dependencies (no Docker needed)
 pip install -r requirements.txt
@@ -28,11 +28,11 @@ Results are downloaded to `client/outputs/`.
 
 ## Prerequisites
 
-| Requirement  | Version                                          |
-| ------------ | ------------------------------------------------ |
-| Python       | 3.8.20+                                          |
-| pip packages | see requirements.txt                             |
-| SSH access   | to the VM running `aerosouda-cluster/cluster/` |
+| Requirement  | Version                                   |
+| ------------ | ----------------------------------------- |
+| Python       | 3.8.20+                                   |
+| pip packages | see requirements.txt                      |
+| SSH access   | to the VM running `tg-cluster/cluster/` |
 
 ## Bundled Scenarios (in `scenarios/`)
 

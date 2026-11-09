@@ -3,7 +3,7 @@
 Two-component system for distributed aerospace simulation output processing:
 
 ```
-aerosouda-cluster/
+tg-cluster/
 ├── cluster/    — Docker Compose cluster (deploy on VM)
 │                 13 containers: HDFS (1 namenode + 4 datanodes) + Spark (1 master + 6 workers + history)
 └── client/     — Remote CLI (run on analyst's laptop, NO Docker required)
