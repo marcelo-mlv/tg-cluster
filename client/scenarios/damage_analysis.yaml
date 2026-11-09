@@ -1,0 +1,26 @@
+name: "DamageAnalysis"
+description: >
+  Correlação entre o dano máximo sofrido pelos fighters azuis e a longitude
+  do radar vermelho. Avalia se a posição do radar influencia o dano causado
+  aos fighters azuis.
+
+x_variable:
+  name: "red_radar_longitude"
+  entity_selector:
+    side: "red"
+    type_contains: "radar"
+  field_path: "state.geo_pos.longitude"
+  frame_aggregation: "last"
+  scope: "per_experiment"
+
+y_variable:
+  name: "blue_fighter_max_damage"
+  entity_selector:
+    side: "blue"
+    type_contains: "fighter"
+  field_path: "state.damage"
+  frame_aggregation: "max"
+  scope: "per_entity"
+
+batch_aggregation:
+  type: "pearson_correlation"

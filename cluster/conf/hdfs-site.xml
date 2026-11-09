@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  HDFS-specific configuration.
+  Mounted inside HDFS containers (namenode + datanode).
+-->
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>2</value>
+    <description>Replication factor 2 across the available datanodes.</description>
+  </property>
+
+  <property>
+    <name>dfs.permissions.enabled</name>
+    <value>false</value>
+    <description>Disable HDFS permissions for local development.</description>
+  </property>
+
+  <property>
+    <name>dfs.blocksize</name>
+    <value>134217728</value>
+    <description>128 MB block size.</description>
+  </property>
+</configuration>

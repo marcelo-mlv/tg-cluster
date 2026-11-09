@@ -1,0 +1,20 @@
+name: Minha Análise
+description: ''
+x_variable:
+  name: red_asagndradar_latitude_first
+  entity_selector:
+    side: red
+    type_contains: AsaGndRadar
+  field_path: state.geo_pos.latitude
+  frame_aggregation: first
+  scope: per_experiment
+y_variable:
+  name: blue_f_16c_damage_max
+  entity_selector:
+    side: blue
+    type_contains: F-16C
+  field_path: state.damage
+  frame_aggregation: max
+  scope: per_entity
+batch_aggregation:
+  type: scatter_only

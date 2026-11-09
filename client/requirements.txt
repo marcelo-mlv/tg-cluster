@@ -1,0 +1,15 @@
+# AeroSOuDA Remote Client dependencies
+# Run: pip install -r requirements.txt
+
+# UI
+rich>=13.0.0
+questionary>=2.1.1
+
+# Config
+pyyaml>=6.0.0
+
+# Data (for local result preview)
+pandas>=1.5.0
+
+# Remote connectivity (SSH + SFTP)
+paramiko>=3.4.0

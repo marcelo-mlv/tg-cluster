@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Data
+cluster/inputs/*.csv
+client/outputs/
+!client/outputs/.gitkeep
+
+# Spark events
+cluster/events/
+!cluster/events/.gitkeep
+
+# AI documentation
+ARCHITECTURE.md
+SESSION_CONTEXT.md
+CHANGES_SUMMARY.md
+
+# Secrets
+*.pem
+*.key
+id_rsa
